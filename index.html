@@ -3,35 +3,28 @@
 
 <head>
   <script src="script.js" defer></script>
-  <style>
-  </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 
-
-
   <meta charset="UTF-8">
-
-   
 
   <title>NBA-PLAYER-STATS</title>
 </head>
 
 <body>
-
   <p class="photo" style="text-align: center;">
-    <img src="pictures/nba-logo.jpg" width="150" height="auto" align="center" />
+    <img src="img/nba-logo.jpg" width="150" height="auto" align="center" />
   </p>
   <header>
     <h1 class="h1">NBA PLAYER STATS</h1>
+    <p class="p" changeColor>Hover here for color change</p>
   </header>
   <!-- Search Bar-->
   <div class="container">
     <form>
       <input type="search" id="search" placeholder="Search NBA Player" data-search>
-      <button type="submit">Search</button>
-    
+      <button type="submit" button-search>Search</button>
   </div>
   <div class="user-cards" data-user-cards-container></div>
     <template data-user-template>
@@ -41,41 +34,34 @@
       <div class="footer" data-footer></div> 
     </template>
     
-        </form>
-          <!-- table \-->
-          <table class="tablez" bgcolor="black" align="center" width="500">
- 
-            <caption><B>Player Stats</B></caption>
-            <tr bgcolor="white" align="center">
-              <th width="50"> PTS </th>
-              <th width="50"> RBS </th>
-              <th width="50"> AST </th>
-              <th width="50"> STL </th>
-              <th width="50"> BLK </th>
-              <th width="50"> TO </th>
-              <th width="50"> FG% </th>
-              <th width="50"> FT%</th>
-              <th width="50"> 3PT% </th>
+    </form>
+    <!-- table \-->
+    <table class="tablez" bgcolor="black" align="center" width="500">
 
-            </tr>
-            <tr bgcolor="white" align="center">
-              <td width="50">26</td>
-              <td width="50">25</td>
-              <td width="50">13</td>
-              <td width="50">26</td>
-              <td width="50">25</td>
-              <td width="50">13</td>
-              <td width="50">26</td>
-              <td width="50">25</td>
-              <td width="50">13</td>
-            </tr>
-          </table>
-
-
-
-
-
-        </div>
+      <caption><B>Player Stats</B></caption>
+      <thead bgcolor="white" align="center">
+        <th width="50"> PTS </th>
+        <th width="50"> RBS </th>
+        <th width="50"> AST </th>
+        <th width="50"> STL </th>
+        <th width="50"> BLK </th>
+        <th width="50"> TO </th>
+        <th width="50"> FG% </th>
+        <th width="50"> FT%</th>
+        <th width="50"> 3PT% </th>
+      </thead>
+      <tr bgcolor="white" align="center" tableRow>
+        <td width="50" points></td>
+        <td width="50" rebounds></td>
+        <td width="50" assists></td>
+        <td width="50" steals></td>
+        <td width="50" blocks></td>
+        <td width="50" turnovers></td>
+        <td width="50" fieldgoal></td>
+        <td width="50" freethrow></td>
+        <td width="50" threepoint></td>
+      </tr>
+    </table>
+    </div>
 </body>
-
 </html>
